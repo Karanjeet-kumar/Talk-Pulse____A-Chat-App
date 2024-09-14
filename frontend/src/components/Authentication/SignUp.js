@@ -56,6 +56,7 @@ function SignUp() {
           "Content-type": "application/json",
         },
       };
+      // API Connected to Frontend
       const { data } = await axios.post(
         "/api/user",
         {
