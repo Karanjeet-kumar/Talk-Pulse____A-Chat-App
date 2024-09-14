@@ -10,7 +10,6 @@ import {
   TabPanels,
 } from "@chakra-ui/react";
 import Login from "../components/Authentication/Login";
-import SinUp from "../components/Authentication/SignUp";
 import SignUp from "../components/Authentication/SignUp";
 
 function Homepage() {
