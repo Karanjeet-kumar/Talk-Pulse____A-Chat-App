@@ -42,6 +42,7 @@ function Login() {
         },
       };
 
+      // API Connected to Frontend
       const { data } = await axios.post(
         "/api/user/login",
         { email, password },
