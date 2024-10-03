@@ -37,6 +37,21 @@ const registerUser = asyncHandler(async (req, res) => {
   }
 });
 
+// api/user?search=
+const allUsers = asyncHandler(async (req, res) => {
+  const keyword = req.query.search
+    ? {
+        $or: [
+          { name: { $regex: req.query.search, $options: "i" } },
+          { email: { $regex: req.query.search, $options: "i" } },
+        ],
+      }
+    : {};
+
+  const users = await User.find(keyword).find({ _id: { $ne: req.user._id } });
+  res.send(users);
+});
+
 // api/user/login
 const authUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
@@ -57,4 +72,4 @@ const authUser = asyncHandler(async (req, res) => {
   }
 });
 
-module.exports = { registerUser, authUser };
+module.exports = { registerUser, allUsers, authUser };
