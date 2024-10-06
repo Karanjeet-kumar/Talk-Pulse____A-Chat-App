@@ -5,4 +5,19 @@
     display: flex;
     background-image: url("https://www.transparenttextures.com/patterns/stressed-linen.png");
     color: black;
+    background-position: center;
+    background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.281);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
