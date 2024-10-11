@@ -15,6 +15,7 @@ const MyChats = ({ fetchAgain }) => {
 
   const toast = useToast();
 
+  // FetchAllChats-API Connected to Frontend(ChatPage)
   const fetchChats = async () => {
     // console.log(user._id);
     try {
