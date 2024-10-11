@@ -46,7 +46,7 @@ function SideDrawer() {
     history.push("/");
   };
 
-  // SearchUser-API Connected to Frontend
+  // SearchUser-API Connected to Frontend(ChatPage)
   const handleSearch = async () => {
     if (!search) {
       toast({
@@ -84,6 +84,7 @@ function SideDrawer() {
     }
   };
 
+  // AccessChat/CreateChat-API Connected to Frontend(ChatPage)
   const accessChat = async (userId) => {
     console.log(userId);
 
