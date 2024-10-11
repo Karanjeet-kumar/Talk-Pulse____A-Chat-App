@@ -46,6 +46,7 @@ function SideDrawer() {
     history.push("/");
   };
 
+  // SearchUser-API Connected to Frontend
   const handleSearch = async () => {
     if (!search) {
       toast({

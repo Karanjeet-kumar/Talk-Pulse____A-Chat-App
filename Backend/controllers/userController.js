@@ -39,9 +39,9 @@ const registerUser = asyncHandler(async (req, res) => {
   }
 });
 
-//@description     Get or Search all users
-//@route           GET /api/user?search=
-//@access          Public
+//@description    Get or Search all users
+//@route          GET /api/user?search=
+//@access         Public
 const allUsers = asyncHandler(async (req, res) => {
   const keyword = req.query.search
     ? {
