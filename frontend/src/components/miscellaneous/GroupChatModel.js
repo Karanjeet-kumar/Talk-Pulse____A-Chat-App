@@ -45,6 +45,7 @@ const GroupChatModal = ({ children }) => {
     setSelectedUsers([...selectedUsers, userToAdd]);
   };
 
+  // SearchUser-API Connected to Frontend(GroupModal)
   const handleSearch = async (query) => {
     setSearch(query);
     if (!query) {
@@ -78,6 +79,7 @@ const GroupChatModal = ({ children }) => {
     setSelectedUsers(selectedUsers.filter((sel) => sel._id !== delUser._id));
   };
 
+  // CreateGroupChat-API Connected to Frontend(ChatPage)
   const handleSubmit = async () => {
     if (!groupChatName || !selectedUsers) {
       toast({
