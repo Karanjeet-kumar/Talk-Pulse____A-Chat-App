@@ -50,7 +50,7 @@ const MyChats = ({ fetchAgain }) => {
       flexDir="column"
       alignItems="center"
       p={3}
-      bg="white"
+      bg="#00FFFF"
       w={{ base: "100%", md: "31%" }}
       borderRadius="lg"
       borderWidth="1px"
@@ -70,6 +70,7 @@ const MyChats = ({ fetchAgain }) => {
           display="flex"
           fontSize={{ base: "17px", md: "10px", lg: "17px" }}
           rightIcon={<AddIcon />}
+          bg="white"
         >
           New Group Chat
         </Button>
@@ -78,7 +79,7 @@ const MyChats = ({ fetchAgain }) => {
         display="flex"
         flexDir="column"
         p={3}
-        bg="#F8F8F8"
+        bg="white"
         w="100%"
         h="100%"
         borderRadius="lg"

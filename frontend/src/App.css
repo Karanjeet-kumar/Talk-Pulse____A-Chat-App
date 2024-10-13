@@ -3,7 +3,8 @@
 .App{
     min-height: 100vh;
     display: flex;
-    background-image: url("https://www.transparenttextures.com/patterns/stressed-linen.png");
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
     color: black;
     background-position: center;
     background-size: cover;
