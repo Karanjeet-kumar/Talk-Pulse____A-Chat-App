@@ -33,6 +33,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
 
   const { selectedChat, setSelectedChat, user } = ChatState();
 
+  // SearchUser-API Connected to Frontend(UpdateGroup)
   const handleSearch = async (query) => {
     setSearch(query);
     if (!query) {
@@ -63,6 +64,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
     }
   };
 
+  // RenameGroupChat-API Connected to Frontend(UpdateGroup)
   const handleRename = async () => {
     if (!groupChatName) return;
 
@@ -99,6 +101,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
     setGroupChatName("");
   };
 
+  // AddUserToGroup-API Connected to Frontend(UpdateGroup)
   const handleAddUser = async (user1) => {
     if (selectedChat.users.find((u) => u._id === user1._id)) {
       toast({
@@ -155,6 +158,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
     setGroupChatName("");
   };
 
+  // RemoveUserFromGroup-API Connected to Frontend(UpdateGroup)
   const handleRemove = async (user1) => {
     if (selectedChat.groupAdmin._id !== user._id && user1._id !== user._id) {
       toast({
