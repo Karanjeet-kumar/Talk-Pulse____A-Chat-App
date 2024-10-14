@@ -165,8 +165,10 @@ function SideDrawer() {
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerHeader borderBottomWidth="1px">Search Users</DrawerHeader>
-          <DrawerBody>
+          <DrawerHeader borderBottomWidth="5px" bg="#00FFFF">
+            Search Users
+          </DrawerHeader>
+          <DrawerBody borderWidth="5px" borderColor="#00FFFF">
             <Box display="flex" pb={2}>
               <Input
                 placeholder="Search by name or email"
