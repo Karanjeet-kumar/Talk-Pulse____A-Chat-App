@@ -143,8 +143,8 @@ function SideDrawer() {
             </Text>
           </Button>
         </Tooltip>
-        <Text fontSize="2xl" fontFamily="Work sans">
-          Talk~Pulse
+        <Text fontSize="3xl" fontWeight={"semibold"} fontFamily="Work sans">
+          Talk ~ Pulse
         </Text>
         <div>
           <Menu>
