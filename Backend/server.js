@@ -12,8 +12,17 @@ dotenv.config();
 
 connectDB();
 const app = express();
+const cors = require("cors");
 
 app.use(express.json());
+// Enable CORS for all routes
+app.use(
+  cors({
+    origin: "http://localhost:3000", // Frontend origin
+    methods: "GET,POST,PUT,DELETE",
+    credentials: true,
+  })
+);
 
 // app.get("/", (req, res) => {
 //   res.send("API is running.");
